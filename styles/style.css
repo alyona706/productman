@@ -1,0 +1,272 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+         	 box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: .025em;
+	color: #303030;
+	background-color: #f0f0f0;
+}
+.header {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 45px 0 50px;
+	font-size: 0;
+}
+.logo,
+.navigation,
+.navigation ul,
+.navigation li,
+.hamburger {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.navigation {
+	margin-left: 570px;
+}
+.navigation ul{
+	margin: 0;
+	padding: 0;
+}
+.navigation li + li {
+	margin-left: 45px;
+}
+.navigation a {
+	font-weight: 400;
+	font-size: 18px;
+	text-decoration: none;
+	color: #303030;
+	line-height: 1;
+	text-transform: capitalize;
+}
+.navigation a:hover {
+	text-decoration: underline;
+}
+.hamburger {
+	margin-left: 35px;
+	border: none;
+	background: transparent;
+	border-radius: 0;
+	outline: none;
+	width: 16px;
+	height: 13px;
+	padding: 0;
+	position: relative;
+	bottom: 2px;
+	cursor: pointer;
+}
+.hamburger span {
+	display: inline-block;
+	background: #303030;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+.hamburger:before {
+	content: "";
+	display: inline-block;
+	background: #303030;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hamburger:after {
+	content: "";
+	display: inline-block;
+	background: #303030;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.banner {
+	width: 1200px;
+	margin: 50px auto 0;
+	padding: 0 0 50px;
+	height: 670px;
+	font-size: 0;
+	position: relative;
+}
+.banner-text,
+.banner-image {
+	width: 50%;
+	position: absolute;
+	top: 0;
+}
+.banner-text {
+	left: 0;
+	text-align: right;
+}
+.banner-text p {
+	font-size: 24px;
+	font-weight: 300;
+	width: 575px;
+	display: inline-block;
+}
+.banner-text a {
+	font-size: 20px;
+	color: #E10011;
+	font-weight: 700;
+	text-decoration: none;
+	transition: border-color .5s ease-in;
+}
+.banner-text a:hover {
+	font-size: 26px;
+}
+.banner-image {
+	right: 0;
+	text-align: center;
+}
+.banner-text .title {
+	font-size: 149px;
+	text-transform: uppercase;
+	line-height: 1;
+	word-wrap: break-word;
+	text-align: right;
+	font-family: Raleway, sans-serif;
+	font-weight: 900;
+	margin: 0;
+}
+.point {
+	position: relative;
+	top: 560px;
+}
+.point span {
+	display: inline-block;
+	background: #303030;
+	height: 11px;
+	width: 11px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.point span:nth-child(1) {
+	background: #E10011;
+}
+.point span:nth-child(2) {
+	left: 38px;
+}
+.point span:nth-child(3) {
+	left: 76px;
+}
+.portfolio {
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	padding: 114px 0 72px;
+}
+.portfolio-text {
+	text-align: center;
+	font-family: Raleway, sans-serif;	
+}
+.portfolio-text .title {
+	text-transform: capitalize;
+	font-size: 48px;
+	font-weight: 900;
+	margin: 0;
+}
+.portfolio-text .underline {
+	padding: 15px 0 10px;
+}
+.portfolio-text p {
+	width: 585px;
+	margin: 0 auto;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.4;
+	padding: 0 0 70px;
+}
+.portfolio-images {
+	position: relative;
+	height: 809px;
+	width: 1057px;
+	margin: 0 auto;
+}
+.image img {
+	border-radius: 5px;
+}
+.portfolio-images .image {
+	position: absolute;
+}
+.portfolio-images .image-1 {
+	height: 387px;
+	width: 693px;
+	top: 0;
+	left: 0;
+}
+.portfolio-images .image-2 {
+	height: 387px;
+	width: 332px;
+	top: 0;
+	right: 0;
+}
+.portfolio-images .image-3 {
+	width: 328px;
+	height: 388px;
+	left: 0;
+	bottom: 0;
+}
+.portfolio-images .image-4 {
+	width: 328px;
+	height: 388px;
+	bottom: 0;
+	left: 365px;
+}
+.portfolio-images .image-5 {
+	width: 332px;
+	height: 388px;
+	right: 0;
+	bottom: 0;
+}
+.align {
+	position: absolute;
+	bottom: 40px;
+	left: 25px;
+	width: 235px;
+}
+.description {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #e10011;
+	border-radius: 5px;
+	opacity: 0;
+	transition: opacity .2s ease-in;
+	cursor: pointer;
+}
+.image:hover .description {
+	opacity: 1;
+}
+.description h4 {
+	font-family: Roboto, sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 1.3;
+	color: #FFF;
+	margin: 0;
+}
+.align span {
+	height: 5px;
+	background-color: #FFF;
+	width: 97px;
+	position: absolute;
+}
