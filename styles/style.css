@@ -120,7 +120,7 @@ body {
 	color: #E10011;
 	font-weight: 700;
 	text-decoration: none;
-	transition: border-color .5s ease-in;
+	transition: 0.2s ease-in;
 }
 .banner-text a:hover {
 	font-size: 26px;
@@ -140,30 +140,24 @@ body {
 	margin: 0;
 }
 .point {
+	text-align: center;
 	position: relative;
-	top: 560px;
+	top: 90%;
 }
-.point span {
+.point button {
 	display: inline-block;
 	background: #303030;
 	height: 11px;
 	width: 11px;
 	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
+	margin: 0 0 0 9px;
+	cursor: pointer;
+	border: none;
+	transition: 0.2s ease-in;
 }
-.point span:nth-child(1) {
-	background: #E10011;
-}
-.point span:nth-child(2) {
-	left: 38px;
-}
-.point span:nth-child(3) {
-	left: 76px;
+.point button:hover {
+	background-color: #E10011;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .portfolio {
 	width: 1200px;
@@ -269,4 +263,96 @@ body {
 	background-color: #FFF;
 	width: 97px;
 	position: absolute;
+}
+.news-title {
+	font-family: Raleway, sans-serif;
+	text-align: center;
+}
+.news-title h2 {
+	font-weight: 900;
+	font-size: 48px;
+	text-transform: uppercase;
+	margin: 95px 0 15px;
+}
+.news-title p {
+	font-weight: 400;
+	font-size: 18px;
+	width: 570px;
+	margin: 0 auto 15px;
+}
+.enter-mail {
+	display: block;
+	margin: 25px auto 60px;
+	width: 700px;
+	font-size: 0;
+}
+.mail {
+	width: 70%;
+	height: 70px;
+	border: none;
+	font-family: Raleway, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #979797;
+	font-style: italic;
+	padding: 0 25px;
+	border-radius: 35px 0 0 35px;
+	float: left;
+}
+.subscribe {
+	height: 70px;
+	width: 30%;
+	background-color: #e10011;
+	color: #FFF;
+	font-family: Roboto, sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius: 0 35px 35px 0;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+}
+.subscribe:hover {
+	font-size: 22px;
+}
+.footer {
+	margin: 110px 0 25px;
+}
+.social {
+	font-size: 0;
+	width: 402px;
+	margin: 55px auto;
+}
+.social-item {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-color: #FFF;
+	border-radius: 50%;
+	color: #979797;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.social-item:hover {
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+} 
+.social-item a {
+	height: 100%;
+	width: 100%;
+}
+.social-item img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.copyright {
+	font-family: Raleway, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+.copyright span {
+	font-weight: 600;
 }
